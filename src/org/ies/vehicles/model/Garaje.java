@@ -1,4 +1,5 @@
 package org.ies.vehicles.model;
+
 import java.util.Arrays;
 import java.util.Objects;
 
@@ -7,11 +8,11 @@ public class Garaje {
     private String direction;
     private String Vehicle[];
 
-  public Garaje(String name, String direction, String Vehicle[] ){
-      this.name = name;
-      this.direction = direction;
-      this.Vehicle = Vehicle;
-  }
+    public Garaje(String name, String direction, String Vehicle[]) {
+        this.name = name;
+        this.direction = direction;
+        this.Vehicle = Vehicle;
+    }
 
     public String getName() {
         return name;
