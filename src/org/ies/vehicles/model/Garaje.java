@@ -5,13 +5,13 @@ import java.util.Objects;
 
 public class Garaje {
     private String name;
-    private String direction;
-    private String Vehicle[];
+    private String address;
+    private String Vehicle;
 
     public Garaje(String name, String direction, String Vehicle[]) {
         this.name = name;
-        this.direction = direction;
-        this.Vehicle = Vehicle;
+        this.address = direction;
+        this.Vehicle[] = Vehicle;
     }
 
     public String getName() {
@@ -19,7 +19,7 @@ public class Garaje {
     }
 
     public String getDirection() {
-        return direction;
+        return address;
     }
 
     public String[] getVehicle() {
@@ -31,11 +31,11 @@ public class Garaje {
     }
 
     public void setDirection(String direction) {
-        this.direction = direction;
+        this.address = direction;
     }
 
     public void setVehicle(String[] vehicle) {
-        Vehicle = vehicle;
+        Vehicle = vehicle[];
     }
 
     @Override
@@ -43,12 +43,12 @@ public class Garaje {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Garaje garaje = (Garaje) o;
-        return Objects.equals(name, garaje.name) && Objects.equals(direction, garaje.direction) && Objects.deepEquals(Vehicle, garaje.Vehicle);
+        return Objects.equals(name, garaje.name) && Objects.equals(address, garaje.address) && Objects.deepEquals(Vehicle, garaje.Vehicle);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(name, direction, Arrays.hashCode(Vehicle));
+        return Objects.hash(name, address, Arrays.hashCode(Vehicle));
     }
 
 }
