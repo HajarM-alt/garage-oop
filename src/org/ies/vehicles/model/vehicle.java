@@ -62,35 +62,12 @@ public class vehicle {
     }
 
     @Override
-    public String toString() {VehicleType;
+    public String toString() {
+        VehicleType;
         return "vehicle{" +
                 "VehicleType=" + VehicleType +
                 ", maxSpeed=" + maxSpeed +
                 ", color='" + color + '\'' +
                 ", plate='" + plate + '\'' +
-                '}';
     }
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
